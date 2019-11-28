@@ -1,0 +1,73 @@
+#forecastCont {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  min-height: 500px;
+  margin-top: 50px;
+  border: 2px solid #6FC4E8;
+}
+.currentDay {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+  width: 32%;
+  background: linear-gradient(#B5EBF5, #F5F5B5);
+  border-right: none;
+  text-align: center;
+  color: #909596;
+}
+.currentDay .date {
+  font-size: 22px;
+  line-height: 40px;
+  letter-spacing: 1px;
+}
+.currentDay .city {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.currentDay .temp {
+  font-size: 50px;
+  font-weight: bold;
+}
+.currentDay img {
+  width: 140px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.currentDay .state {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+.nextDays {
+  display: flex;
+  flex-wrap: wrap;
+  width: 68%;
+  background: linear-gradient(#F5F5B5, #B5EBF5);
+  box-sizing: border-box;
+  position: relative;
+}
+.nextDays .day {
+  padding-top: 50px;
+  text-align: center;
+  width: 33.3%;
+  display: inline-block;
+  color: #909596;
+}
+.nextDays .day img {
+  width: 80px;
+}
+.nextDays .day .temp {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 40px;
+  margin-bottom: 24px;
+}
+.nextDays .day .date {
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+.nextDays .day:first-child {
+  display: none;
+}

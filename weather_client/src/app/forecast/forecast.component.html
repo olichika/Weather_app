@@ -1,0 +1,20 @@
+<div class="forecastContainer">  
+  <div id="forecastCont" *ngIf="city.weathers?.length">
+      <div class="currentDay" >
+          <div class="date">{{city.weathers[0].dt_txt | date}}</div>
+          <div class="city">{{city.name}}</div>
+          <img src="{{'http://openweathermap.org/img/w/'+ city.weathers[0].weather[0].icon +'.png'}}" alt="weatherState">
+          <div class="state">{{city.weathers[0].weather[0].main}}</div>
+          <div class="temp">{{((city.weathers[0].main.temp - 273.15).toFixed(2)) | number: '1.00-00'}}°</div>
+      </div>
+      <div class="nextDays">
+        <div class="day" *ngFor="let day of city.weathers; let i = index;">
+          <div *ngIf="i > 0">
+            <img src="{{'http://openweathermap.org/img/w/'+ day.weather[0].icon +'.png'}}" alt="weatherState">
+            <div class="temp">{{((day.main.temp - 273.15).toFixed(2)) | number: '1.00-00'}}°</div>
+            <div class="date">{{day.dt_txt | date}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

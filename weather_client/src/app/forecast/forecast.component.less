@@ -1,0 +1,74 @@
+#forecastCont {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    min-height: 500px;
+    margin-top: 50px;
+    border: 2px solid #6FC4E8;
+}
+.currentDay {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    width: 32%;
+    background: linear-gradient(#B5EBF5, #F5F5B5);
+    border-right: none;
+    text-align: center;
+    color: #909596;
+    .date {
+        font-size: 22px;
+        line-height: 40px;
+        letter-spacing: 1px;
+    }
+    .city {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .temp {
+        font-size: 50px;
+        font-weight: bold;
+    }
+    img {
+        width: 140px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .state {
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+}
+.nextDays {
+    display: flex;
+    flex-wrap: wrap;
+    width: 68%;
+    background: linear-gradient(#F5F5B5, #B5EBF5);
+    box-sizing: border-box;
+    position: relative;
+    .day {
+        padding-top: 50px;
+        text-align: center;
+        width: 33.3%;
+        display: inline-block;
+        // border: 1px solid #6FC4E8;
+        color: #909596;
+        img {
+            width: 80px;
+        }
+        .temp {
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 40px;
+            margin-bottom: 24px;
+        }
+        .date {
+            font-family: 'Nanum Gothic Coding', monospace;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 0.3px;
+        }
+    }
+    .day:first-child {
+        display: none;
+    }
+}
