@@ -10,4 +10,4 @@ Run Server:
 
 Run Client:
 1. npm install
-2. ng serve
+2. npm start
